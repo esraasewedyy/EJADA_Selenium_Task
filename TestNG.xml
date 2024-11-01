@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EJADA Suite">
+    <parameter name="browser" value="chrome"/>
+    <test thread-count="5" name="Login with invalid data">
+        <classes>
+            <class name="EjadaTest.module1.TC00_LoginTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Login with valid data">
+        <classes>
+            <class name="EjadaTest.module2.TC01_LoginTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Add the most expensive two products to the cart">
+        <classes>
+            <class name="EjadaTest.module2.TC02_ProductTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="check the previously selected products are displayed">
+        <classes>
+            <class name="EjadaTest.module2.TC03_CartTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Fill all the displayed form with data">
+        <classes>
+            <class name="EjadaTest.module2.TC04_CheckoutTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="Verify tha URL">
+        <classes>
+            <class name="EjadaTest.module2.TC05_OverviewTest"/>
+        </classes>
+    </test>
+    <test thread-count="5" name="check the success message and Your order has been dispatched message ">
+        <classes>
+            <class name="EjadaTest.module2.TC06_CompleteTest"/>
+        </classes>
+    </test>
+</suite>
